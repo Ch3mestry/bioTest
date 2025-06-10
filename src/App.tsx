@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import { useForm } from "react-hook-form";
-import React, { useState } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 
 // Допустимые символы для аминокислот
@@ -52,7 +52,7 @@ export default function App() {
     setSequences(data);
   };
 
-  const handleCopy = (e: React.MouseEvent) => {
+  const handleCopy = () => {
     const selection = window.getSelection()?.toString();
     if (selection && AMINO_REGEX.test(selection)) {
       navigator.clipboard.writeText(selection);
