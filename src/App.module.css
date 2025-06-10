@@ -1,0 +1,44 @@
+.main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.result {
+  margin-top: 2rem;
+  word-break: break-word;
+  font-family: monospace;
+}
+
+.sequenceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.linePair {
+  display: flex;
+  flex-direction: column;
+}
+
+.sequenceLine {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.letter {
+  padding: 2px 4px;
+  border-radius: 4px;
+  user-select: text;
+}
+
+.diff {
+  background-color: rgba(255, 0, 0, 0.2);
+}
